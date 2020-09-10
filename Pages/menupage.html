@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="UTF-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<title>Menu | BorhaneFood.com</title>
+    	<link rel="stylesheet" href="../CSS/style.css" />
+    	<link rel="stylesheet" href="../CSS/menu.css" />
+		<link rel="stylesheet" media ="screen and (max-width: 1480px)" href="../CSS/menu_phone.css" > 
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+	<script src="../javascript/ordercontrol.js"></script>
+	<link rel="stylesheet" href="../CSS/preloader.css" /><!--css for pre loader-->
+  	</head>
+  
+  <body id="main" onload="load()">
+	 <!--preloader-->
+	 <div id="loader">
+		<h1 id="h1">Cooking in progress..</h1>
+	  <div id="cooking">
+		  <div class="bubble"></div>
+		  <div class="bubble"></div>
+		  <div class="bubble"></div>
+		   <div class="bubble"></div>
+		  <div class="bubble"></div>
+		<div id="area">
+		  <div id="sides">
+			  <div id="pan"></div>
+			  <div id="handle"></div>
+		  </div>
+		  <div id="pancake">
+			<div id="pastry"></div>
+		  </div>
+		</div>
+	  </div>
+  </div>
+<!--script for preloader -->
+  <script>
+	  //pre loader
+	   var preloader = document.getElementById("loader");
+      function load() {
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 1000);
+      }
+  </script>
+  <!--end of preloader-->
+  	<nav id="navbar">
+  		<div class="logo">
+        	<img
+          		src="../Pictures/logo.png"
+          		alt="BorhaneFood Logo"
+          		height="75px"
+				width="100px"
+        	/>
+      	</div>
+      	<ul>
+      	  <li class="item"><a href="../index.html">Home</a></li>
+      	  <li class="item"><a href="menupage.html">Special Menu</a></li>
+      	  <li class="item"><a href="about_us.html">About Us</a></li>
+      	  <li class="item"><a href="contactUs.html">Contact Us</a></li>
+      	  <li class="item"><a href="review.html">Reviews</a></li>
+      	</ul>
+    </nav>
+    
+    <section id="course-menu">
+    	<h1 align="center">Menu</h1>
+    	<div class="course">
+    		<center><a href="#northindian">algerian</a></center>
+    	</div>
+    	<div class="course">
+    		<center><a href="#southindian">South Indian</a></center>
+    	</div>
+    	<div class="course">
+    		<center><a href="#italian">Italian</a></center>
+    	</div>
+    	<div class="course">
+    		<center><a href="#asian">Asian</a></center>
+    	</div>
+    	<div class="course">
+    		<center><a href="#dessert">Desserts & Drinks</a></center>
+    	</div>
+    </section>
+    
+    <section id="northindian" class="course-menu">
+    	<center><div class="course-head">
+    		<a href="#course-menu"><center>algerian</center></a>
+		</div>
+
+		<img src="../Pictures/Menu Pictures/cous.jpg" alt="food_item" />	
+    	<div class="item">
+    		Couscous<button class="add" onclick="a(0,0)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/mhjouba.jpg" alt="food_item" />
+    	<div class="item">
+    		Mahjouba<button class="add" onclick="a(0,1)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/chekh.png" alt="food_item" />
+    	<div class="item">
+    		Chekhchokha<button class="add" onclick="a(0,2)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/Zviti.jpg" alt="food_item" />
+    	<div class="item">
+    		Zviti<button class="add" onclick="a(0,3)">+</button>
+		</div></center>
+		
+    </section>
+    
+    <section id="southindian" class="course-menu">
+
+    	<center><div class="course-head">
+    		<a href="#course-menu"><center>South Indian</center></a>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/dosa.PNG" alt="food_item" />
+    	<div class="item">
+    		Dosa<button class="add" onclick="a(1,0)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/uttapam.PNG" alt="food_item" />
+    	<div class="item">
+    		Uttapamma<button class="add" onclick="a(1,1)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/idli.PNG" alt="food_item" />
+    	<div class="item">
+    		Idli<button class="add" onclick="a(1,2)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/mendu.PNG" alt="food_item" />
+    	<div class="item">
+    		Medu Vada<button class="add" onclick="a(1,3)">+</button>
+    	</div></center>
+    </section>
+    
+    <section id="italian" class="course-menu">
+
+    	<center><div class="course-head">
+    		<a href="#course-menu"><center>Italian</center></a>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/pasta_macroni.PNG" alt="food_item" />
+    	<div class="item">
+    		Pasta Macroli<button class="add" onclick="a(2,0)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/brushetaa.PNG" alt="food_item" />
+    	<div class="item">
+    		Bruschetta<button class="add" onclick="a(2,1)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/pizza1.PNG" alt="food_item" />
+    	<div class="item">
+    		Pizza Margerita<button class="add" onclick="a(2,2)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/pizza2.jpg" alt="food_item" />
+    	<div class="item">
+    		Pizza cappriciossa<button class="add" onclick="a(2,3)">+</button>
+    	</div></center>
+    </section>
+    
+    <section id="asian" class="course-menu">
+
+    	<center><div class="course-head">
+    		<a href="#course-menu"><center>Asian</center></a>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/friedrice.jpg" alt="food_item" />
+    	<div class="item">
+    		Fried rice<button class="add" onclick="a(3,0)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/noodles.jpg" alt="food_item" />
+    	<div class="item">
+    		Noodles<button class="add" onclick="a(3,1)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/manchurian.PNG" alt="food_item" />
+    	<div class="item">
+    		Manchurian<button class="add" onclick="a(3,2)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/kebab.PNG" alt="food_item" />
+    	<div class="item">
+    		Kebab<button class="add" onclick="a(3,3)">+</button>
+		</div></center>
+		
+    </section>
+    
+    <section id="dessert" class="course-menu">
+
+    	<center><div class="course-head">
+    		<a href="#course-menu"><center>Desserts & Drinks</center></a>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/gulabjamun.PNG" alt="food_item" />
+    	<div class="item">
+    		Gulab Jamun<button class="add" onclick="a(4,0)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/rasgulla.PNG" alt="food_item" />
+    	<div class="item">
+    		Rasagulla<button class="add" onclick="a(4,1)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/cheese_cake.PNG" alt="food_item" />
+    	<div class="item">
+    		Cheese Cake<button class="add" onclick="a(4,2)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/hot_chocolate_cake.PNG" alt="food_item" />
+    	<div class="item">
+    		Hot chocolate cake<button class="add" onclick="a(4,3)">+</button>
+		</div></center>
+		
+    </section>
+    
+    <div id="cart" onclick="cartwindow()"><div id="cartvalue"></div></div>
+    
+	<center><button class="bttn" onClick="cartwindow()">Order Now</button></center>
+	
+<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+        <div class="main-content">
+          <div class="left box">
+            <h2>
+  About us</h2>
+  <div class="content">
+              <p>
+  Life’s too short for boring food, So Enjoy Food from all over the world delicacies here.
+  We’re always in the mood for food to serve you Delight in every bite. We will take you on a world food tour.</p>
+  <div class="social">
+	<a href="https://www.facebook.com/borhanemspb4657"><span class="fab fa-facebook-f"></span></a>
+	<a href="https://www.twitter.com/borhanemspb4657"><span class="fab fa-twitter"></span></a>
+	<a href="https://www.instagram.com/brh1n"><span class="fab fa-instagram"></span></a>
+	<a href="https://github.com/"><span class="fab fa-github"></span></a>
+              </div>
+  </div>
+  </div>
+  <div class="center box">
+            <h2>
+  Address</h2>
+  <div class="content">
+              <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text">53, Route de Constantine, Fésdis, Batna 05078</span>
+              </div>
+  <div class="phone">
+                <span class="fas fa-phone-alt"></span>
+                <span class="text">+213-541551069</span>
+              </div>
+  </div>
+  </div>
+  <div class="right box">
+            <h2>
+  Contact us</h2>
+  <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">
+  Email *</div>
+  <input type="email" required>
+                </div>
+  <div class="msg">
+                  <div class="text">
+   Message *</div>
+     <textarea id=".msgForm" rows="4" cols="100" required></textarea>                     
+                <br />
+  <div class="btn">
+  <button type="submit">Send</button>
+                </div>
+  <div class="bottom">
+  <center>
+            <span class="credit">Created By <a href="https://www.facebook.com/borhanemspb4657">BorhaneGuedouar</a> | </span>
+            <span class="far fa-copyright"></span> 2020 All rights reserved.
+          </center>
+  </div>
+</footer>
+	  <!-- End Footer -->
+	</body>
+  </html>
+  

@@ -1,0 +1,333 @@
+/* Whole Document */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:lightgoldenrodyellow!important;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex; /*Using FlexBox*/
+  align-items: center;
+  position: relative; 
+}
+
+/* Navigation Bar : Logo and Image */
+#logo {
+  margin: 8px 8px;
+}
+
+#logo img {
+  margin: 8px 8px;
+  height: "100px";
+  width: "150px";
+}
+
+/* Navigation Bar : List Styling */
+#navbar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+#navbar ul li a {
+  color: black;
+  background-color: gold;
+  display: block;
+  padding: 10px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: lightgoldenrodyellow;
+}
+
+/* Utility Class */
+.h-primary {
+  font-size: 3.5rem;
+  padding: 15px;
+  position: relative;
+  float: left;
+}
+
+#review_section {
+  display: flex;
+  flex-direction: column;
+  padding:0px 190px 0px 190px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#review_section::before {
+  content: "";
+  background: url(../Pictures/all-bg.jpg) no-repeat center center/cover;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.95;
+  background-color: lightgoldenrodyellow;
+}
+
+#review_section h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#review_section div p {
+  color:black;
+  background-color:wheat;
+  border-radius: 1cm;
+  margin-left: 60px;
+  font-size: 1rem;
+  font-family: "Bree Serif", serif;
+  position: relative;
+  float: left;
+  width: 23%;
+  padding: 2.5%;
+  text-align: justify;
+  display: flex;
+}
+
+#review_section div p:hover{
+    color:purple;
+  border-radius: 1cm;
+}
+
+
+/* Footer Part */
+
+.footer-area {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.bg-f {
+  background-image: url("../Pictures/footer-bg.jpg");
+  background-attachment: scroll;
+  background-clip: initial;
+  background-color: rgba(0, 0, 0, 0);
+  background-origin: initial;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-f::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 10vw;
+  text-align: center;
+  margin-top: 20px;
+  color: #f1f1f1;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #f12020;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+
+

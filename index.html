@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borhane Food | Taste of Home</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1480px)"
+      href="CSS/phone.css"
+    />
+    <!-- Added Phone.css for Media Query  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Pictures/logo.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/preloader.css" /><!--css for preloader and news letter-->
+  </head>
+<!--body-->
+  <body onload="load()">
+    <!--preloader-->
+    <div id="loader">
+          <h1 id="h1">Cooking in progress..</h1>
+        <div id="cooking">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+             <div class="bubble"></div>
+            <div class="bubble"></div>
+          <div id="area">
+            <div id="sides">
+                <div id="pan"></div>
+                <div id="handle"></div>
+            </div>
+            <div id="pancake">
+              <div id="pastry"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  <!--Script for preloader-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    
+    //pre loader
+    var preloader = document.getElementById("loader");
+    function load() {
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 1000);
+    }
+    </script><!--end of Script-->
+  
+    <nav id="navbar">
+      <div id="logo">
+        <img
+          src="Pictures/logo.png"
+          alt="Borhane Food Logo"
+          height="75px"
+          width="100px"
+        />
+      </div>
+
+      <div class="list_item">
+        <ul>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="Pages/menupage.html">Special Menu</a></li>
+          <li class="item"><a href="Pages/about_us.html">About Us</a></li>
+          <li class="item"><a href="Pages/contactUs.html">Contact Us</a></li>
+          <li class="item"><a href="Pages/review.html">Reviews</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home">
+      <h1 class="h-primary">Welcome to Borhane Food</h1>
+      <p>
+        Your special occasion destination Where Many Foods is Served at its
+        Best. We Try to Bring the Pleasure of variety on your plate to A "Just
+        Vow" Movement! This is a luxury restaurant beyond the Boundaries of
+        taste!
+      </p>
+      <p>
+        We’ve got something for everyone.Rain or shine, it’s time to dine!!
+      </p>
+      <button
+        class="bttn"
+        onClick="window.location.href = 'Pages/menupage.html'"
+      >
+        Order Now
+      </button>
+    </section>
+
+    <section class="services-container">
+      <h1 class="h-primary center">
+        Our Special Dishes
+      </h1>
+      <div id="services">
+        <div class="box1">
+          <img src="Pictures/cousk.png" alt="food_item_1" />
+          <h2 class="h-secondary center">Couscous</h2>
+          <p class="center">
+           Couscous is a traditional algerian food 
+           it contains many vegetables and it is very healthy and delicious.
+           and we make it Special to Our Customers. The Royal taste is
+           here to stay!
+          </p>
+        </div>
+        <div class="box1">
+          <img src="Pictures/pastry.jpg" alt="food_item_2" />
+          <h2 class="h-secondary center">Dessert</h2>
+          <p class="center">
+            Beautiful Cakes for Beautiful Occasions. Where Great Tastes Are A
+            PIECE OF CAKE. Every person is unique, why shouldn’t their cake be?
+            Make your occasion a day to remember at Borhane Food.
+          </p>
+        </div>
+        <div class="box1">
+          <img src="Pictures/stir-fry-noodles.jpg" alt="food_item_3" />
+          <h2 class="h-secondary center">Chinese</h2>
+          <p class="center">
+            We serve sumptuous food in a great ambience. You’ve tried the rest,
+            now try the best at Borhane Food. Special Chinese Served for a
+            special Customers to take your celebration to a whole new level!
+          </p>
+        </div>
+      </div>
+    </section>
+
+      
+    <!-- Start Footer -->
+    <footer class="footer-area bg-f">
+        <div class="main-content">
+          <div class="left box">
+            <h2>
+  About us</h2>
+  <div class="content">
+              <p>
+  Life’s too short for boring food, So Enjoy Food from all over the world delicacies here.
+  We’re always in the mood for food to serve you Delight in every bite. We will take you on a world food tour.</p>
+  <div class="social">
+                <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+                <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+              </div>
+  </div>
+  </div>
+  <div class="center box">
+            <h2>
+  Address</h2>
+  <div class="content">
+              <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text">53, Route de Constantine, Fésdis, Batna 05078</span>
+              </div>
+  <div class="phone">
+                <span class="fas fa-phone-alt"></span>
+                <span class="text">+213-541-551-069</span>
+              </div>
+  </div>
+  </div>
+  <div class="right box">
+            <h2>
+  Contact us</h2>
+  <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">
+  Email *</div>
+  <input type="email" required>
+                </div>
+  <div class="msg">
+                  <div class="text">
+   Message *</div>
+     <textarea id=".msgForm" rows="4" cols="100" required></textarea>                     
+                <br />
+  <div class="btn">
+  <button type="submit">Send</button>
+                </div>
+  <div class="bottom">
+  <center>
+            <span class="credit">Created By <a href="https://www.facebook.com/borhanemspb4657">BorhaneGuedouar</a> | </span>
+            <span class="far fa-copyright"></span> 2020 All rights reserved.
+          </center>
+  </div>
+</footer>
+    <!-- End Footer -->
+  </body>
+</html>
